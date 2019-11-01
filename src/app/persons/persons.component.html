@@ -1,0 +1,30 @@
+<div class="container">
+
+
+    <div>
+        <div>
+            <input type="text" [(ngModel)]="datos.nombre" placeholder="Ingrese el nombre">
+        </div>
+        <div>
+            <input type="text" [(ngModel)]="datos.edad" placeholder="Ingrese la edad">
+        </div>
+        <!-- <div>
+            <input type="text" [(ngModel)]="datos.id" placeholder="id">
+        </div> -->
+        <div>
+            <button type="submit" (click)="guardar(datos)">guardar</button>
+        </div>
+        <!-- <div>
+            <button type="submit" (click)="actualizar(datos)">actializar</button>
+        </div> -->
+    </div>
+
+    <div class="card-body">
+        <div class="list-group" *ngFor="let items of data">
+            <ul class="list-group">
+                <li class="textareaMensaje">{{items.nombre}}</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
